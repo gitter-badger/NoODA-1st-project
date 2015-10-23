@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" rel="script"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+    <link type="text/css" rel="stylesheet" href="css/slide.css">
+    <script type="text/javascript" rel="script" src="js/slide.js"></script>
+    <title>Main DEMO</title>
+</head>
+<body>
+<div class="container">
+    <!-- header -->
+    <div class="header">
+        <div class="row">
+            <div class="col-xs-12 text-right contact">
+                <span class="glyphicon glyphicon-phone"></span>(+84) 164 414 165
+                <span class="glyphicon glyphicon-envelope"></span>quocanh96[at]gmail.com
+                <!-- need fix long phone + mail for xs screen-->
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 logo">
+                    <a href="/"><img src="img/logo.png" alt="logo"/></a>
+                </div>
+                <div class="col-xs-12 col-sm-4 shop">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </button>
+                        <button type="button" class="btn btn-default">LOGIN</button>
+                        <button type="button" class="btn btn-primary">
+                            REGISTER <span class="glyphicon glyphicon-chevron-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+            <li><a href="/"><strong>PRODUCT</strong></a></li>
+            <li><a href="/"><strong>CAMPAING</strong></a></li>
+            <li><a href="/"><strong>SERVICES</strong></a></li>
+            <li><a href="/"><strong>BAND</strong></a></li>
+            <li><a href="#"><strong>ABOUT US</strong></a></li>
+        </ul>
+        <ul class="nav navbar-form navbar-right">
+            <li class="inner">
+                <i class="glyphicon glyphicon-search"></i>
+                <input type="text" class="form-control" id="search" placeholder="SEARCH">
+            </li>
+        </ul>
+    </nav><!-- customize style -->
+
+</div>
+<div class="rslides_container">
+    <script>
+        $(function () {
+            $(".rslides").responsiveSlides({
+                auto: true,             // Boolean: Animate automatically, true or false
+                speed: 500,            // Integer: Speed of the transition, in milliseconds
+                timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+                pager: false,           // Boolean: Show pager, true or false
+                nav: true,             // Boolean: Show navigation, true or false
+                random: true,          // Boolean: Randomize the order of the slides, true or false
+                pause: true,           // Boolean: Pause on hover, true or false
+                pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+                namespace: "centered-btns"   // String: Change the default namespace used
+            });
+        });
+    </script>
+    <ul class="rslides">
+        <li><img src="img/logo.png" alt=""></li>
+
+    </ul>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 hidden-xs hidden-sm kindbox">
+            <div class="text-center kind"><strong>MAN</strong></div>
+            <div class="image-cropper">
+                <div id="man"></div>
+            </div>
+            <div class="text-center total">TOTAL</div>
+            <div class="text-center number">321 products</div>
+        </div>
+        <div class="col-md-4 hidden-xs hidden-sm kindbox" style="float: right;">
+            <div class="text-center kind"><strong>WOMAN</strong></div>
+            <div class="image-cropper">
+                <div id="woman"></div>
+            </div>
+            <div class="text-center total">TOTAL</div>
+            <div class="text-center number">321 products</div>
+        </div>
+        <div class="col-md-4 hidden-xs hidden-sm kindbox" style="margin-left: 5%;">
+            <div class="text-center kind"><strong>CHILD</strong></div>
+            <div class="image-cropper">
+                <div id="child"></div>
+            </div>
+            <div class="text-center total">TOTAL</div>
+            <div class="text-center number">321 products</div>
+        </div>
+    </div>
+</div>
+<!-- product -->
+<div class="container" id="productarea">
+    <div class="row">
+        <div class="col-xs-8">
+            <span id="kind1">SPECIAL</span> <span id="kind2" style="color:red;">PRODUCT</span>
+        </div>
+        <div class="col-xs-4">
+            <a class="viewall" href="/">
+                <span class="glyphicon glyphicon glyphicon-play"></span>
+                <span id="view">View  products</span>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-lg-3">
+            <div class="product">
+                <img class="product-logo img-responsive" src="img/product/1.png">
+                <img class="product-preview img-responsive" src="img/product/1-preview.png">
+-                <div class="product-text">
+                    This is bad product. Don't buy it.
+                </div>
+                <button type="button" class="btn btn-primary product-buy">
+                    <span id="price">$100</span>
+                    <span id="getnow">GET NOW</span>
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </button>
+            </div>
+        </div> <!-- single item -->
+
+        <!-- add item here -->
+
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div id="logo-footer" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <h2><span>Brand</span> Logo</h2>
+            </div> <!-- logo-footer -->
+            <div id="menu-footer" class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <ul>
+                    <li><a href="#">About Us</a>&nbsp; | &nbsp;</li>
+                    <li><a href="#">Faq</a>&nbsp; | &nbsp;</li>
+                    <li><a href="#">Terms and Conditions</a>&nbsp; | &nbsp;</li>
+                    <li><a href="#">Secure Payments</a>&nbsp; | &nbsp;</li>
+                    <li><a href="#">Shipping</a>&nbsp; | &nbsp;</li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div> <!-- menu-footer -->
+
+            <div id="symbol-footer" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div id="image">
+                    <a href="#"><img src="images/footer-symbol.png" alt=""></a>
+                    <a href="#"><img src="images/footer-twitter.png" alt=""></a>
+                    <a href="#"><img src="images/footer-facebook.png" alt=""></a>
+                </div> <!-- image -->
+            </div> <!-- symbol-footer -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+</footer>
+
+</body>
+</html>

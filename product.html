@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div id="logo" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<h1><span>Brand</span> Logo</h1>
+				</div> <!-- logo -->
+
+				<div id="contact" class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-12  col-xs-12">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<h2><img src="images/phone.png">090 - 225 44 66</h2>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<h2><img src="images/mail.png">help@trendd.com</h2>
+						</div>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-shopping-cart"></span>
+							</button>
+							<button type="button" class="btn btn-default">LOGIN</button>
+							<button type="button" class="btn btn-primary">
+								REGISTER <span class="glyphicon glyphicon-chevron-right"></span>
+							</button>
+						</div> <!-- register -->
+					</div> <!-- row -->
+				</div> <!-- contact -->
+
+			</div> <!-- row -->
+		</div> <!-- container -->
+		
+	</header>
+	
+	<div class="container">
+		<nav class="navbar navbar-default">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Products</a></li>
+		        <li><a href="#">Campaigns</a></li>
+		        <li><a href="#">Services</a></li>
+		        <li><a href="#">Brands</a></li>
+		        <li><a href="#">About Us</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-form navbar-right">
+				  <li class="inner">
+					  <i class="glyphicon glyphicon-search"></i>
+					  <input type="text" class="form-control" id="search" placeholder="SEARCH">
+				  </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		</nav>
+	</div><!-- /.container -->
+
+	<div class="container">
+		<div class="row" id="filter">
+			<h3>Filter</h3>
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" id="brands">
+				<h4>Brands</h4>
+				<ul>
+					<li><a href="#">adidas</a></li>
+					<li><a href="#">nike</a></li>
+					<li><a href="#">camper</a></li>
+					<li><a href="#">superga</a></li>
+					<li><a href="#">timberland</a></li>
+					<li><a href="#">new balance</a></li>
+					<li><a href="#">converse</a></li>
+					<li><a href="#">puma</a></li>
+					<li><a href="#">kinetix</a></li>
+				</ul>
+			</div> <!-- brands -->
+			<div id="type" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<h2>Women</h2>
+					<div id="image-woman">
+						<img src="images/shoe-girl.png" alt="">
+						<img src="images/shoe-girl-symbol.png" alt="">
+					</div> <!-- image-woman -->
+					<h3>Total</h3>
+					<h4>357 Products</h4>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<h2>Men</h2>
+					<div id="image-man">
+						<img src="images/shoe-boy.png" alt="">
+						<img src="images/shoe-boy-symbol.png" alt="">
+					</div> <!-- image-man -->
+					<h3>Total</h3>
+					<h4>357 Products</h4>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<h2>Kids</h2>
+					<div id="image-kid">
+						<img src="images/shoe-kid.png" alt="">
+						<img src="images/shoe-kid-symbol.png" alt="">
+					</div> <!-- image-kid -->
+					<h3>Total</h3>
+					<h4>357 Products</h4>
+				</div>
+			</div> <!-- type -->
+			<div id="color" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<div id="select-color" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h3>Select Color</h3>
+					<div style="background-color: red"></div>
+					<div style="background-color: yellow"></div>
+					<div style="background-color: blue"></div>
+					<div style="background-color: black"></div>
+					<div style="background-color: green"></div>
+					<div style="background-color: brown"></div>
+					<div style="background-color: white"></div>
+					<div style="background-color: orange"></div>
+					<div style="background-color: red"></div>
+					<div style="background-color: yellow"></div>
+				</div> <!-- select-color -->
+				<div id="select-price" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h3>Price Range
+					<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;"></h3>
+					<div id="slider-range"></div>
+				</div> <!-- select-price -->
+			</div> <!-- color -->
+		</div> <!-- row filter -->
+
+		<div class="row" id="detail">
+			<h1>Men'sFootwear</h1>
+			<h4>Hookset Handcrafted Fabric China</h4>
+			<div id="left" class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+				<img class="img-responsive" src="images/big-shoes.jpg">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img class="img-responsive" src="images/small-shoes-1.jpg" alt="">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img class="img-responsive" src="images/small-shoes-2.jpg" alt="">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<img class="img-responsive" src="images/small-shoes-3.jpg" alt="">
+				</div>
+			</div> <!-- left -->
+			<div id="right" class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+				<div id="price" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					<div id="rating" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<img src="images/star-checked.png" >
+						<img src="images/star-checked.png">	
+						<img src="images/star-checked.png">	
+						<img src="images/star-unchecked.png">	
+						<img src="images/star-unchecked.png">
+						<h5>Read <span>8</span> Reviews</h5>	
+					</div> <!-- rating -->
+					
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<del>174.00</del>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h1><span>109.00</span>$</h1>
+					</div>
+				</div> <!-- price -->
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<img src="images/pig.png" alt="" class="img-responsive">
+					<h5>save <span>40%</span></h5>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<hr>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<p>This is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is taht it has a more or less normal distribution of letters, as opposed to using 'content here'</p>
+					<p>
+						<a href="#">
+							<img src="images/free-ship.png" alt="">
+							Free Shipping
+						</a>
+					</p>
+				</div>
+				<div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-12 col-xs-12">
+					<form action="get">
+						<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 form-group">
+							<label for="size">
+								Size
+							</label>
+							<select name="size" id="size" class="form-control">
+								<option value="0">Select size</option>
+							</select>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-group">
+							<label for="quantity">Quantity</label>
+							<select name="quantity" id="quantity" class="form-control">
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+
+						<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<button class="btn-lg">Add to cart <img src="images/cart-button.png" alt=""></button>
+						</div>
+					</form>	
+				</div>
+
+			</div> <!-- right -->
+		</div> <!-- row detail -->
+
+		<div class="row" id="comment">
+			<div id="tabs">
+			  <ul>
+			    <li><a href="#tabs-1">Product Overview</a></li>
+			    <li><a href="#tabs-2">Features</a></li>
+			    <li><a href="#tabs-3">Customer Reviews</a></li>
+			  </ul>
+			  <div id="tabs-1">
+			  	<h3>Description</h3>
+			    <p>
+			    	With its beautiful premium leather, lace-up oxfordis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.
+			    </p>
+			    <h4>Details</h4>
+			    <p>
+			    	Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+			    </p>
+			  </div> <!-- tabs-1 -->
+			  <div id="tabs-2">
+			    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turp</p>
+			  </div> <!-- tabs-2 -->
+			  <div id="tabs-3">
+			    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+			  </div> <!-- tabs - 3 -->
+			</div> <!-- tabs -->
+		</div> <!-- row comment -->
+	</div> <!-- container -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div id="logo-footer" class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<h2><span>Brand</span> Logo</h2>
+				</div> <!-- logo-footer -->
+				<div id="menu-footer" class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+					<ul>
+						<li><a href="#">About Us</a>&nbsp; | &nbsp;</li>
+						<li><a href="#">Faq</a>&nbsp; | &nbsp;</li>
+						<li><a href="#">Terms and Conditions</a>&nbsp; | &nbsp;</li>
+						<li><a href="#">Secure Payments</a>&nbsp; | &nbsp;</li>
+						<li><a href="#">Shipping</a>&nbsp; | &nbsp;</li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div> <!-- menu-footer -->
+
+				<div id="symbol-footer" class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+					<div id="image">
+						<a href="#"><img src="images/footer-symbol.png" alt=""></a>
+						<a href="#"><img src="images/footer-twitter.png" alt=""></a>
+						<a href="#"><img src="images/footer-facebook.png" alt=""></a>
+					</div> <!-- image -->
+				</div> <!-- symbol-footer -->
+			</div> <!-- row -->
+		</div> <!-- container -->
+	</footer>
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+			$( "#tabs" ).tabs();
+		});
+		$(function() {
+			$( "#slider-range" ).slider({
+				range: true,
+				min: 0,
+				max: 500,
+				values: [ 75, 300 ],
+				slide: function( event, ui ) {
+					$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+				}
+			});
+			$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+			" - $" + $( "#slider-range" ).slider( "values", 1 ) );
+		});
+	</script>
+</body>
+</html>

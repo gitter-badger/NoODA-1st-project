@@ -1,0 +1,218 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.header {
+    margin: 30px;
+}
+
+.contact {
+    padding-right: 0px;
+}
+
+.contact span {
+    margin-left: 10px;
+    margin-right: 3px;
+}
+
+.shop {
+    position: relative;
+    height: 46px; /*theo logo*/
+}
+
+.shop > .btn-group {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+
+.navbar {
+    z-index: 9999;
+}
+
+.navbar li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar li:not(:last-child){
+    border-right: 1px solid ;
+}
+#inner {
+    position: relative;
+}
+.navbar-right li i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+.navbar-right li input {
+    padding-left: 30px;
+}
+
+.kindbox {
+    width: 30%;
+    background-color: white;
+}
+
+.kind, .total, .number {
+    margin-top: 15px;
+}
+
+.total {
+    color: red;
+}
+
+.number {
+    margin-bottom: 15px;
+}
+
+.viewall {
+    float: right;
+}
+.viewall > .glyphicon {
+    padding-right: 3px;
+}
+
+#kind1, #kind2 {
+    font-size: larger;
+}
+#view {
+    font-style: italic;
+}
+
+#productarea {
+    background-color: white;
+    margin-top: 30px;
+}
+.product {
+    padding: 15px 20px 20px;
+    height: 400px;
+    position: relative;
+    border: 1px solid;
+}
+
+.product:hover {
+    border: 5px solid red;
+}
+
+
+.product-logo, .product-preview, .product-text, .kind-preview, .image-cropper {
+     display: block;
+     margin: auto;
+ }
+.image-cropper {
+    margin-top: 15px;
+}
+.image-cropper {
+    max-width: 100px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+#man, #woman, #child {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    /*background:url("http://www.electricvelocity.com.au/Upload/Blogs/smart-e-bike-side_2.jpg") center no-repeat;*/
+    background-size:cover;
+}
+#man:hover, #woman:hover, #child:hover {
+    opacity: 0.5;
+}
+#man {
+    background:url("../img/man.png") center no-repeat;
+}
+#woman {
+    background:url("../img/woman.png") center no-repeat;
+}
+#child {
+    background:url("../img/child.png") center no-repeat;
+}
+#productarea > .row {
+    margin-top: 15px;
+}
+.product-preview, .product-text {
+    margin-top: 70px;
+}
+
+.product-text {
+    max-width: 75%;
+    text-align: center;
+    /*word-break: break-all;*/
+}
+.product-buy {
+    width: 180px;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    bottom: 15px;
+    background-color: #c9b586;
+    border-color: white;
+}
+.product-buy:hover {
+    background-color: #c9b586;
+    border-color: white;
+}
+#price {
+    padding-right: 5px;
+    border-right: 1px solid #fff;
+}
+#getnow ~ .glyphicon {
+    padding-left: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: rgb(238, 46, 36);
+    padding-bottom: 20px;
+}
+
+footer #logo-footer {
+    padding-top: 20px;
+}
+
+footer #logo-footer h2 {
+    text-transform: uppercase;
+    font-family: "Futura Std Light";
+    font-size: 29px;
+    color: white;
+}
+
+footer #logo-footer span {
+    font-family: "Futura Std Bold";
+}
+
+
+footer #menu-footer ul {
+    margin-top: 40px;
+}
+
+footer #menu-footer li {
+    list-style: none;
+    display: inline;
+}
+footer #menu-footer li a, footer #menu-footer li {
+    font-family: "GothamBook";
+    color: white;
+}
+
+footer #symbol-footer {
+    padding-top: 40px;
+}
+
+footer #symbol-footer img {
+    border-radius: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+footer #symbol-footer #image {
+    text-align: right;
+}
